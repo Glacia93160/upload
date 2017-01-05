@@ -18,3 +18,12 @@
 	</form>
 	<p class="droite">Trier par : <a href="<?php genereUrl('Score');?>">score</a>  <a href="<?php genereUrl('Nom');?>">nom</a></p>
 </div>
+
+
+
+<form action="supprimer.php" method="post">
+<p> Voulez-vous vraiment supprimer le joueur <?php echo $GET["file"] ;?> ?
+<input type="hidden" name="file" value="<?php echo $GET["file"] ;?>"/>
+
+<p><input type="submit" value="oui" name="suppression"/><input type="submit" value="non" name="suppression"/></p>
+</form>
